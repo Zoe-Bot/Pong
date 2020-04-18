@@ -11,11 +11,12 @@ function setup() {
     // canvas
     createCanvas(600, 500);
 
+    //player
+    player1 = new Player(50, height / 2);
+    player2 = new Player(width - 50, height / 2);
 
-    player1 = new Player();
-    player2 = new Player();
-
-    ball = new Ball(200, 0);
+    //ball
+    ball = new Ball();
 }
 
 function draw() {
